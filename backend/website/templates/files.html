@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Files</title>
+</head>
+<body>
+    <h1>List of Files</h1>
+    <ul>
+        {% for file in files %}
+        <li>
+            <strong>{{ file.name }}</strong> - {{ file.size }} bytes (Last Modified: {{ file.modified_time }})
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
